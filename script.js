@@ -78,4 +78,69 @@ fetch(json_url)
         }
       }
     });
+    let video = document.getElementsByTagName("video")[0];
+    let play = document.getElementById("play");
+    play.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+        play.innerHTML = `Play<i class="bi bi-pause-fill"></i>`;
+      } else {
+        video.pause();
+        play.innerHTML = `watch<i class="bi bi-play-fill"></i>`;
+      }
+    });
+    // filter-series
+    let series = document.getElementById("series");
+    series.addEventListener("click", () => {
+      cards.innerHTML = "";
+      let series_array = data.filter((value) => {
+        return value.type === "series";
+      });
+      series_array.forEach((value) => {
+        let { name, imdb, date, sposter, bposter, genre, url } = value;
+        let card = document.createElement("a");
+        card.classList.add("card");
+        card.href = url;
+        card.innerHTML = `
+          <img src="${sposter}" alt="${name}" class="poster">
+          <div class="rest_card">
+            <img src="${bposter}" alt="">
+            <div class="cont">
+              <h4>${name}</h4>
+              <div class="sub">
+                <p>${genre},${date}</p>
+                <h3><span>IMDB</span><i class="bi bi-star-fill"></i>${imdb}</h3>
+              </div>
+            </div>
+          </div>`;
+        cards.appendChild(card);
+      });
+    });
+    // filter movies
+    let movies = document.getElementById("movies");
+    movies.addEventListener("click", () => {
+      cards.innerHTML = "";
+      let movies_array = data.filter((value) => {
+        return value.type === "movie";
+      });
+      movies_array.forEach((value) => {
+        let { name, imdb, date, sposter, bposter, genre, url } = value;
+        let card = document.createElement("a");
+        card.classList.add("card");
+        card.href = url;
+        card.innerHTML = `
+          <img src="${sposter}" alt="${name}" class="poster">
+          <div class="rest_card">
+            <img src="${bposter}" alt="">
+            <div class="cont">
+              <h4>${name}</h4>
+              <div class="sub">
+                <p>${genre},${date}</p>
+                <h3><span>IMDB</span><i class="bi bi-star-fill"></i>${imdb}</h3>
+              </div>
+            </div>
+          </div>`;
+        cards.appendChild(card);
+      });
+    });
   });
