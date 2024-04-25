@@ -8,10 +8,34 @@
     "genre": "Action",
     "type": "series",
     "url": "the boys.html",
-    "trailer": "john wick.webm",
-    "low": "./assert/video/theboys.webm",
-    "medium": "./assert/video/theboys 720ph.mp4",
-    "high": "./assert/video/theboys 1080ph.mp4"
+    "trailer": "./assert/video/john wick.webm",
+    "low": "./assert/video/the boys.webm",
+    "medium": "./assert/video/the boys.webm",
+    "high": "./assert/video/theboys.webm"
+  },
+  {
+    "name": "Avatar",
+    "date": "2009",
+    "type": "movie",
+    "genre": "Action",
+    "Director": "James Cameron",
+    "Writer": "James Cameron",
+    "Actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "Language": "English, Spanish",
+    "sposter": "https://th.bing.com/th/id/OIP.NNDzj9c4s1ntnvDOwTDNagHaLH?w=116&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "bposter": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+    "imdb": "7.9",
+    "Type": "movie"
+  },
+  {
+    "name": "I Am Legend",
+    "date": "2007",
+    "type": "movie",
+    "genre": "Drama, Horror, Sci-Fi",
+    "sposter": "https://th.bing.com/th/id/OIP.MqexNyCV7LillAq7mTt1xwHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "imdb": "7.2",
+    "bposter": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI0NTI4NjE3NV5BMl5BanBnXkFtZTYwMDA0Nzc4._V1_.jpg"
   },
   {
     "name": "Money Heist",
@@ -36,7 +60,7 @@
     "genre": "Action",
     "type": "movie",
     "url": "jhon wick.html",
-    "trailer": "john wick trailer.mp4",
+    "trailer": "./assert/video/john wick.webm",
     "low": "./assert/video/Jhon Wick 480ph.mp4",
     "medium": "./assert/video/Jhon Wick 720ph.mp4",
     "high": "./assert/video/Jhon Wick 1080ph.mp4"
